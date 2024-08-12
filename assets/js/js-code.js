@@ -4,14 +4,20 @@ for(i=0; i < arr1.length; i ++){
     console.log(i, arr1[i]);
 }
 
-// //2
-// const arr2 = [1, 7, 88, 33, 120, 127]
-// for(i=0;i , arr2.length; i++){
-//     if()
-// }
-// for(i=0, i <){
-//     for(){}
-// }
+//2
+const arr2 = [7, 88, 33, 120, 127]
+const notPrimeNumbers = []
+for(i=0;i < arr2.length; i++){
+    for(c=2; c < arr2[i]; c++){
+        let isNotPrime = arr2[i]%c===0
+        if (isNotPrime===true){
+            notPrimeNumbers.push(arr2[i])
+            break;
+        }
+    }
+}
+console.log('notPrimeNumbers :>> ', notPrimeNumbers);;
+
 //3
 const arr3 = [1,2,3]
 const arr4 = [4,5,6]
