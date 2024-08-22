@@ -6,18 +6,17 @@ for(i=0; i < arr1.length; i ++){
 
 //2
 const arr2 = [7, 88, 33, 120, 127]
-const notPrimeNumbers = []
-for(i=0;i < arr2.length; i++){
-    for(c=2; c < arr2[i]; c++){
-        let isNotPrime = arr2[i]%c===0
-        if (isNotPrime===true){
-            notPrimeNumbers.push(arr2[i])
-            break;
+function f1(arr){
+    for(i=0;i < arr.length; i++){
+        for(c=2; c < arr[i]; c++){
+           if(arr[i]%c === 0){
+                console.log(arr[i]);
+                break;
+           }
         }
     }
 }
-console.log('notPrimeNumbers :>> ', notPrimeNumbers);;
-
+f1(arr2)
 //3
 const arr3 = [1,2,3]
 const arr4 = [4,5,6]
@@ -25,7 +24,7 @@ const arr3And4 = arr3.concat(arr4)
 console.log('arr3And4 :>> ', arr3And4);
 //4
 const arr5 = [6,5,4]
-arr5.splice(0, 3, 4,5,6)
+arr5.reverse()
 console.log(arr5);
 //5
 const arr6 = [1,2,3]
@@ -59,6 +58,6 @@ const newArr12 = arr12.slice(2,5)
 console.log(newArr12);
 //12
 const arr13 = [1,2,3,4,5]
-arr13.splice(1,4)
-arr13.push('w', 'trtr', 2, 3, 4, 'vvv', 'a', 'hello')
+arr13.splice(1,4,'w', 'trtr', 2, 3, 4, 5)
+arr13.splice(6,1,'vvv', 'a', 'hello')
 console.log(arr13);
